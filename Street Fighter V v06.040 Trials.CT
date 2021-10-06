@@ -3,7 +3,7 @@
   <CheatEntries>
     <CheatEntry>
       <ID>1843</ID>
-      <Description>"&lt;--- CHECK THIS"</Description>
+      <Description>"&lt;--- CHECK THIS BOX TO ENABLE THE SCRIPT"</Description>
       <LastState/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>define(address,"StreetFighterV.exe"+32A13D)
@@ -39,42 +39,14 @@ dealloc(newmem)
       </Hotkeys>
     </CheatEntry>
     <CheatEntry>
-      <ID>1860</ID>
+      <ID>1844</ID>
       <Description>"Trial Combo Check"</Description>
-      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Array of byte</VariableType>
       <ByteLength>8</ByteLength>
       <Address>StreetFighterV.exe+32A13B</Address>
     </CheatEntry>
   </CheatEntries>
-  <CheatCodes>
-    <CodeEntry>
-      <Description>Code :add [rcx+00000180],edx</Description>
-      <AddressString>StreetFighterV.exe+2C7CCD</AddressString>
-      <Before>
-        <Byte>D9</Byte>
-        <Byte>85</Byte>
-        <Byte>D2</Byte>
-        <Byte>7E</Byte>
-        <Byte>3D</Byte>
-      </Before>
-      <Actual>
-        <Byte>01</Byte>
-        <Byte>91</Byte>
-        <Byte>80</Byte>
-        <Byte>01</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Actual>
-      <After>
-        <Byte>8B</Byte>
-        <Byte>81</Byte>
-        <Byte>80</Byte>
-        <Byte>01</Byte>
-        <Byte>00</Byte>
-      </After>
-    </CodeEntry>
-  </CheatCodes>
   <UserdefinedSymbols/>
   <Comments>The script can be toggled on and off with CTRL + ALT + F.
 ----------------------------------------------------------------------------------------------
@@ -94,7 +66,7 @@ v06.040
 06.10.2021
 ----------------------------------------------------------------------------------------------
 Author: Xen0byte, The Opcodemancer
-Repository: ...
+Repository: https://github.com/Xen0byte/Cheat-Engine-Tables
 </Comments>
   <LuaScript>getApplication().Title = "Totally NOT Cheat Engine!"
 getMainForm().setCaption("Totally NOT Cheat Engine!")

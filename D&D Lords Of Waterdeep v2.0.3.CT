@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="26">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>64</ID>
+      <Description>"Coins (1 each) / Clerics (65536 each)"</Description>
+      <LastState Value="6" RealAddress="19B1AAF4"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+000FBFAC</Address>
+      <Offsets>
+        <Offset>44</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Increase Value</Action>
+          <Keys>
+            <Key>97</Key>
+          </Keys>
+          <Value>10</Value>
+          <Description>+10 Coins</Description>
+          <ID>0</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+        <Hotkey>
+          <Action>Increase Value</Action>
+          <Keys>
+            <Key>98</Key>
+          </Keys>
+          <Value>655360</Value>
+          <Description>+10 Clerics</Description>
+          <ID>1</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>65</ID>
+      <Description>"Fighters (1 each) / Rogues (65536 each)"</Description>
+      <LastState Value="0" RealAddress="19B1AAF8"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+000FBFAC</Address>
+      <Offsets>
+        <Offset>48</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Increase Value</Action>
+          <Keys>
+            <Key>99</Key>
+          </Keys>
+          <Value>10</Value>
+          <Description>+10 Fighters</Description>
+          <ID>0</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+        <Hotkey>
+          <Action>Increase Value</Action>
+          <Keys>
+            <Key>100</Key>
+          </Keys>
+          <Value>655360</Value>
+          <Description>+10 Rogues</Description>
+          <ID>1</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>66</ID>
+      <Description>"Wizards (1 each) / Points (65536 each)"</Description>
+      <LastState Value="655381" RealAddress="19B1AAFC"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+000FBFAC</Address>
+      <Offsets>
+        <Offset>4C</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Increase Value</Action>
+          <Keys>
+            <Key>101</Key>
+          </Keys>
+          <Value>10</Value>
+          <Description>+10 Wizards</Description>
+          <ID>0</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+        <Hotkey>
+          <Action>Increase Value</Action>
+          <Keys>
+            <Key>103</Key>
+          </Keys>
+          <Value>655360</Value>
+          <Description>+10 Points</Description>
+          <ID>1</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>67</ID>
+      <Description>"Skulls (1 each)"</Description>
+      <LastState Value="5" RealAddress="19B1AB00"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+000FBFAC</Address>
+      <Offsets>
+        <Offset>50</Offset>
+      </Offsets>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Decrease Value</Action>
+          <Keys>
+            <Key>102</Key>
+          </Keys>
+          <Value>1</Value>
+          <Description>-1 Skull</Description>
+          <ID>0</ID>
+          <ActivateSound>Activate</ActivateSound>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+</CheatTable>

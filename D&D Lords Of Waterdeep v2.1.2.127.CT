@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="38">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>70</ID>
+      <Description>"Coins (1 each) / Clerics (65536 each)"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+00156500</Address>
+      <Offsets>
+        <Offset>68</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>71</ID>
+      <Description>"Fighters (1 each) / Rogues (65536 each)"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+00156500</Address>
+      <Offsets>
+        <Offset>6C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>72</ID>
+      <Description>"Wizards (1 each) / Points (65536 each)"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+00156500</Address>
+      <Offsets>
+        <Offset>70</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>73</ID>
+      <Description>"Skulls (1 each)"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"WaterdeepLib.dll"+00156500</Address>
+      <Offsets>
+        <Offset>74</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>Values are combined in the following manner:
+1) Coins (1 each) + Clerics (65536 each)    =&gt; e.g. 10 Coins + 1 Cleric (10 + 65536) = 65546 (4 Byte Value)
+2) Fighters (1 each) + Rogues (65536 each)  =&gt; e.g. 10 Fighters + 1 Rogues (10 + 65536) = 65546 (4 Byte Value)
+3) Wizards (1 each) + Points (65536 each)   =&gt; e.g. 10 Wizards + 1 Points (10 + 65536) = 65546 (4 Byte Value)
+4) Skulls (1 each)
+----------------------------------------------------------------------------------------------
+Updating the pointers:
+1) Find the address for coins and clerics.
+2) Run multiple pointer scans until a single pointer with just one offset is found. The base assembly should be "WaterdeepLib.dll".
+3) The following 3 pointers are offset by 4 bytes. e.g. XXXXX+4, XXXXX+8, XXXXX+12
+----------------------------------------------------------------------------------------------
+Last Tested On:
+D&amp;D Lords Of Waterdeep (Steam)
+v2.1.2.127
+06.10.2021
+----------------------------------------------------------------------------------------------
+Author: Xen0byte, The Opcodemancer
+Repository: https://github.com/Xen0byte/Cheat-Engine-Tables
+</Comments>
+</CheatTable>

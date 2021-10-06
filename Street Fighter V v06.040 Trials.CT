@@ -41,6 +41,7 @@ dealloc(newmem)
     <CheatEntry>
       <ID>1844</ID>
       <Description>"Trial Combo Check"</Description>
+      <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>Array of byte</VariableType>
       <ByteLength>8</ByteLength>

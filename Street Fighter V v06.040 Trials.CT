@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="38">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1843</ID>
+      <Description>"&lt;--- CHECK THIS"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>define(address,"StreetFighterV.exe"+32A13D)
+
+[ENABLE]
+assert(address,bytes)
+alloc(newmem,$1000,"StreetFighterV.exe"+32A13D)
+label(code)
+
+newmem:
+code:
+address:
+  db 90 90 90 90 90 90
+
+[DISABLE]
+address:
+  db 01 91 84 01 00 00
+dealloc(newmem)
+
+</AssemblerScript>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Toggle Activation</Action>
+          <Keys>
+            <Key>17</Key>
+            <Key>18</Key>
+            <Key>70</Key>
+          </Keys>
+          <ID>0</ID>
+          <ActivateSound>Activate</ActivateSound>
+          <DeactivateSound>Deactivate</DeactivateSound>
+        </Hotkey>
+      </Hotkeys>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1860</ID>
+      <Description>"Trial Combo Check"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>Array of byte</VariableType>
+      <ByteLength>8</ByteLength>
+      <Address>StreetFighterV.exe+32A13B</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Code :add [rcx+00000180],edx</Description>
+      <AddressString>StreetFighterV.exe+2C7CCD</AddressString>
+      <Before>
+        <Byte>D9</Byte>
+        <Byte>85</Byte>
+        <Byte>D2</Byte>
+        <Byte>7E</Byte>
+        <Byte>3D</Byte>
+      </Before>
+      <Actual>
+        <Byte>01</Byte>
+        <Byte>91</Byte>
+        <Byte>80</Byte>
+        <Byte>01</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>81</Byte>
+        <Byte>80</Byte>
+        <Byte>01</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>The script can be toggled on and off with CTRL + ALT + F.
+----------------------------------------------------------------------------------------------
+If the game has been updated and the script does not work anymore:
+1) Scan for this array of bytes: 7E 3D 01 91 84 01 00 00.
+2) Once found, change the AOB to the following: 7E 3D 90 90 90 90 90 90.
+NOTE #01: Make sure that the "Writable" checkbox (Memory Scan Options) is unticked while searching, and that you are searching for a hex value.
+NOTE #02: The current original opcodes are "jle StreetFighterV.exe+32A17A" (7E 3D) and "add [rcx+00000184],edx" (01 91 84010000).
+----------------------------------------------------------------------------------------------
+To update the script:
+1) Get the offset from the address found previously. The address looks like this "StreetFighterV.exe+XXXXXX", so the offset is the XXXXXX part.
+2) Replace the offset in the script with XXXXXX+2. Example: if XXXXXX = 32A13B, then the offset in the script will be 32A13D (32A13B+2).
+----------------------------------------------------------------------------------------------
+Last Tested On:
+Street Fighter V (Steam)
+v06.040
+06.10.2021
+----------------------------------------------------------------------------------------------
+Author: Xen0byte, The Opcodemancer
+Repository: ...
+</Comments>
+  <LuaScript>getApplication().Title = "Totally NOT Cheat Engine!"
+getMainForm().setCaption("Totally NOT Cheat Engine!")
+</LuaScript>
+</CheatTable>
